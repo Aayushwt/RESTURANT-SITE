@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* CSS Reset */
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* CSS Variables*/
+:root{
+    --navbar-height:59px;
+
+}
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.486);
+    
+}
+#navbar ::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+
+/* Navigation Bar :Logo ND Image*/
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/* list styling*/
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Fredoka One', cursive;
+}
+#navbar ul li a{
+    color: rgb(223, 219, 144);
+    display: block;
+    padding :3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:rgb(85, 151, 88);
+    background-color: rgb(216, 219, 174);
+    
+}
+/* home section*/
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:433px;
+    justify-content:center;
+    align-items:center;
+}
+#home::before{
+        content: "";
+        position: absolute;
+        background: url('home_bg.jpg') no-repeat center center/cover; 
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        z-index: -1;
+}
+#home h1{
+    color:rgb(183, 239, 155);
+    text-align: center;
+    font-family: 'Patua One', cursive;
+    height: 4cm;
+}
+#home p{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    height: 3cm;
+    font-family: 'Concert One', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color:#ca1a06bc;
+    color:white;
+    margin:19px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+/* Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+/* Client */
+#client-section{
+    position: relative;
+    height:250px;
+
+
+}
+#client-section{
+    content:"";
+    position: absolute;
+    background: url('https://cdn.wallpapersafari.com/24/19/54czLf.jpg');
+    width: 100%;
+    height: 53%;
+    z-index: -1;
+}
+#client{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-item{
+    padding:34px;
+
+}
+#client img{
+    height:310px;
+    padding: 12px;
+}
+/* Utility classes*/
+.h-primary{
+    color: rgb(183, 239, 155);
+    font-size: 3.8rem;
+    padding: 25px;
+}
+.h-secondary{
+    font-size: 8.8rem;
+    padding: 22px;
+}
+
+.centre{
+    text-align:center;
+}
+/* /CONTACT SECTION/ */
+#contact{
+    position:relative;
+    margin-top: 12cm;
+
+}
+#conatct::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 50px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size:1.3rem;
+    font-family: 'Bree Serif',serif;
+}
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+}
